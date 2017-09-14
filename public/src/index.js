@@ -16,13 +16,24 @@ import {
     Redirect
 } from 'react-router-dom';
 import TestCpn from './components/test/TestCpn';
+import Test2Cpn from './components/test/Test2Cpn';
 import stores from './stores';
 
 class App extends Component {
 
     render() {
         return (
-            <TestCpn/>
+            <div>
+                <ul>
+                    <li><Link to="/first?name=123">first</Link></li>
+                    <li><Link to="/second">second</Link></li>
+                </ul>
+
+                <Switch>
+                    <Route path="/first" exact component={TestCpn}/>
+                    <Route path="/second" component={Test2Cpn}/>
+                </Switch>
+            </div>
         );
     }
 
@@ -30,7 +41,9 @@ class App extends Component {
 
 render(
     <Provider {...stores}>
-        <App/>
+        <Router>
+            <App/>
+        </Router>
     </Provider>,
     document.getElementById('app')
 );

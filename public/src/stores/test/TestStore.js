@@ -13,6 +13,7 @@ class TestStore {
     @action async getInfo() {
         const json = await api.getProfile();
         console.log(json);
+        return true;
     }
 
 }
