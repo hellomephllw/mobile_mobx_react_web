@@ -5,11 +5,25 @@ import { inject, observer } from 'mobx-react';
 @observer
 export default class TestCpn extends Component {
 
-    render() {
-        return (
-            <div>TestCpn</div>
-        );
+    constructor(props) {
+        super(props);
+        this._onClickDoSomething = this._onClickDoSomething.bind(this);
     }
 
+    _onClickDoSomething() {
+        this.props.TestStore.doSomething();
+    }
+
+    render() {
+        const { name, age } = this.props.TestStore;
+        return (
+            <div>
+                <p>TestCpn</p>
+                <p>name:{ name }</p>
+                <p>age:{ age }</p>
+                <button onClick={this._onClickDoSomething}>do something</button>
+            </div>
+        );
+    }
 
 }
