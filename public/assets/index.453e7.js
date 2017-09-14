@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function webpackMissingModule() { throw new Error("Cannot find module \"/Users/liliwen/Desktop/workspace/mobile_mobx_react_web/public/src/index.jsx\""); }());
+(function webpackMissingModule() { throw new Error("Cannot find module \"/Users/liliwen/Desktop/workspace/mobile_mobx_react_web/public/src/index.js\""); }());
 
 
 /***/ })
