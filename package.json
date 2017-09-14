@@ -4,12 +4,12 @@
   "description": "build architype",
   "main": "index.js",
   "scripts": {
-    "dev": "babel-node lib/dev-server",
-    "test": "webpack --config lib/webpack/test-config.js",
-    "prod": "webpack --config lib/webpack/prod-config.js",
-    "build": "export NODE_ENV=production&&webpack --config lib/webpack/dll-config.js",
-    "build-win": "set NODE_ENV=production&&webpack --config lib/webpack/dll-config.js",
-    "build-dev": "webpack --config lib/webpack/dll-config.js"
+    "dev": "babel-node src/lib/dev-server",
+    "test": "webpack --config src/lib/webpack/test-config.js",
+    "prod": "webpack --config src/lib/webpack/prod-config.js",
+    "build": "export NODE_ENV=production&&webpack --config src/lib/webpack/dll-config.js",
+    "build-win": "set NODE_ENV=production&&webpack --config src/lib/webpack/dll-config.js",
+    "build-dev": "webpack --config src/lib/webpack/dll-config.js"
   },
   "author": "llw",
   "license": "MIT",

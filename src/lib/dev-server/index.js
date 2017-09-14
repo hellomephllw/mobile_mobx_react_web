@@ -5,8 +5,8 @@
 global.rootPath = require('path').resolve('./');
 const
     webpack = require('webpack'),
-    webpackConfig = require(`${rootPath}/lib/webpack/dev-config`),
-    jsonServer = require(`${rootPath}/lib/json-server`),
+    webpackConfig = require(`${rootPath}/src/lib/webpack/dev-config`),
+    jsonServer = require(`${rootPath}/src/lib/json-server`),
     express = require('express'),
     webpackDevMiddleware = require('webpack-dev-middleware'),
     webpackHotMiddleware = require("webpack-hot-middleware"),

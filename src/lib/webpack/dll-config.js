@@ -15,13 +15,13 @@ const config = {
     },
     devtool: '#source-map',
     output: {
-        path: `${rootPath}/public/assets`,
+        path: `${rootPath}/assets`,
         filename: '[name].dll.js',
         library: '[name]_[hash]'
     },
     plugins: [
         new webpack.DllPlugin({
-            path: `${rootPath}/public/assets/[name]-manifest.json`,
+            path: `${rootPath}/assets/[name]-manifest.json`,
             name: '[name]_[hash]'
         })
     ]
