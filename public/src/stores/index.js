@@ -1,7 +1,11 @@
 import TestStore from './test/TestStore';
+import TestPersist from './persist/TestPersist';
+
+
 
 const stores = {
-    TestStore
+    TestStore,
+    TestPersist
 };
 
 export default stores;
