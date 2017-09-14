@@ -1,4 +1,5 @@
 import { observable, action } from 'mobx';
+import api from '../../api';
 
 class TestStore {
 
@@ -7,6 +8,11 @@ class TestStore {
 
     @action doSomething() {
         ++this.age;
+    }
+
+    @action async getInfo() {
+        const json = await api.getProfile();
+        console.log(json);
     }
 
 }
