@@ -7,6 +7,7 @@ class TestStore {
     @observable age = 18;
 
     @action doSomething() {
+
         ++this.age;
     }
 
